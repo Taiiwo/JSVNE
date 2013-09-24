@@ -4,7 +4,7 @@
 	"text":"Hello World"
 	}
 	{
-	"background":house.jpg",
+	"background":"house.jpg",
 	"text":"This is just a test"
 	}
 }
