@@ -1,20 +1,23 @@
-function setbg(bgname) {
-	var path = bgname;
-	document.getElementById('game').style.backgroundImage = "url(" + path + ")";
+function setbg(path) {
+	if (path != ""){
+		document.getElementById('game').style.backgroundImage = "url(" + path + ")";
+	}
 }
 function settext(text){
 	document.getElementById("speech").innerHTML = '<p>' + text + "</p>";
 }
 function setmusic(trackname){
-	var path = trackname;
-	var dryrun = '\
+	if (trackname != ""){
+		var path = trackname;
+		var dryrun = '\
 <audio hidden autoplay loop>\
         <source src="' + path + '.ogg" type="audio/ogg" />\
         <source src="' + path + '.mp3" type="audio/mpeg" />\
         <source src="' + path + '.wav" type="audio/wav" />\
 </audio>';
-	if (document.getElementById('music').innerHTML != '') {
-		document.getElementById('music').innerHTML = dryrun;
+		if (document.getElementById('music').innerHTML != '') {
+			document.getElementById('music').innerHTML = dryrun;
+		}
 	}
 }
 function decide(options){
@@ -39,3 +42,4 @@ function next(){
 	}
 	a++;
 }
+$('html').click(next);

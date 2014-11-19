@@ -1,13 +1,13 @@
 var story = [
 		[//act one
 			{//scene one
-				'background':'http://images.4chan.org/b/src/1382491220184.jpg',
+				'background':'http://4.bp.blogspot.com/-6d3kjZRrftI/T5UfIlJ_f5I/AAAAAAAAI0k/XkoD_EjSec8/s1600/Wallpapers11.jpg',
 				'text':'This is super scary.',
 				'music':'http://k002.kiwi6.com/hotlink/60ly26xb0b/p',
 				'type':'story'
 			},
 			{//scene two
-                                'background':'http://images.4chan.org/b/src/1382491649162.jpg',
+                                'background':'',
                                 'text':'Super duper scary..',
                                 'music':'',
                                 'type':'story'

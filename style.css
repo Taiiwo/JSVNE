@@ -14,12 +14,7 @@ body, #game, html {
 	position:relative;
 }
 .giveBorder {
-	border-style: solid;
-	border-width: 35px 46px 37px 48px;
-	-moz-border-image: url(http://www.freestockphotos.biz/pictures/4/4627/border.png) 39 46 36 48 stretch;
-	-webkit-border-image: url(http://www.freestockphotos.biz/pictures/4/4627/border.png) 39 46 36 48 stretch;
-	-o-border-image: url(http://www.freestockphotos.biz/pictures/4/4627/border.png) 39 46 36 48 stretch;
-	border-image: url(http://www.freestockphotos.biz/pictures/4/4627/border.png) 39 46 36 48 stretch;
+	border-style: dotted;
 }
 #speech {
 	position:absolute;
