@@ -34,9 +34,29 @@ function next(){
 		a = 0;
 		i++;
 	}
-	setbg(story[i][a]["background"]);
-	settext(story[i][a]["text"]);
-	setmusic(story[i][a]["music"]);
+	setbg(		story[i][a]["background"]);
+	settext(	story[i][a]["text"	]);
+	setmusic(	story[i][a]["music"	]);
+	if (story[i][a]["type"] == "decision") {
+		decide(story[i][a]["options"]);
+	}
+	a++;
+}
+function prev(){
+	// if we're on the first scene
+	if (a == 0){
+		// go back one chapter
+		i--;
+		// Set the scene to the last scene
+		a = story[i].length - 1;
+	}
+	else {
+		// move back a scene
+		a--;
+	}
+	setbg(		story[i][a]["background"]);
+	settext(	story[i][a]["text"	]);
+	setmusic(	story[i][a]["music"	]);
 	if (story[i][a]["type"] == "decision") {
 		decide(story[i][a]["options"]);
 	}
